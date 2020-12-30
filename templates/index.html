@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Django</title>
+    <style>
+    body {
+    background:  #98FB98  ;
+    padding: 10px;
+    background-repeat: no-repeat;
+
+    </style>
+</head>
+<body>
+    <div id="header" >
+
+        <h1 align="center">Главная страница<h1>
+    </div>
+    <h3 align="center"><a href = "{% url 'animal' %}">Животные</a></h3>
+    <h3 align="center"><a href = "{% url 'area' %}">Зона обитания</a></h3>
+    <h3 align="center"><a href = "{% url 'ration' %}">Рацион кормления</a></h3>
+    <h3 align="center"><a href = "{% url 'bird' %}">Птицы</a></h3>
+    <h3 align="center"><a href = "{% url 'reptile' %}">Рептилии</a></h3>
+    <h3 align="center"><a href = "{% url 'user' %}">Стафф</a></h3>
+    <h3 align="center"><a href="/admin/logout/">Выйти из аккаунта</a></h3>
+
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .myfield{
+            border:1px solid #ccc;
+            border-radius:5px;
+            height:15px;
+            width:200px;
+            margin: 10px 10px 10px 0;
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        body {
+            background:  #98FB98 ;
+            padding: 10px;
+            background-repeat: no-repeat;
+            }
+        label {
+            font-family: Helvetica;
+            }
+            td {
+            font-family: Arial;
+            }
+            th{
+            font-family: Arial;
+            }
+    </style>
+</head>
+<body>
+<div id="header" >
+        <h3 align="right"><a href="/admin/logout/">выйти из аккаунта</a></h3>
+        <h1 align="center">Пользователи<h1>
+        <h3 align="center"><a href = "{% url 'home' %}">назад</a></h3>
+</div>
+
+    <tr>
+        <th align="center" width="50%">
+        <h1 align="center"> Список рационов кормления</h1>
+     <table border="1" width="70%" align="center">
+        </th>
+        <th align="center">
+    <form method="POST" action="show/">
+        {% csrf_token %}
+        <table border="1" width="100%">
+            <tr align="center" bgcolor="#4CAF50">
+                <th>Id</th>
+                <th>Имя пользователя</th>
+                <th>Номер телефона</th>
+                <th>Должность</th>
+                <th>День рождения</th>
+                <th>Семейное положение</th>
+            </tr>
+        {% for i in data_show %}
+            <tr align="center">
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.phone }}</td>
+                <td>{{ i.position}}</td>
+                <td>{{ i.birthday}}</td>
+                <td>{{ i.marital_status}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </form>
+</th>
+    </tr>
+</table>
+</body>
+</html>
+
