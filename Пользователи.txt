@@ -1,0 +1,16 @@
+Администратор
+Login: Weismur
+Password: ais22
+E-mail: kotovalolo4ka@gmail.com
+
+Пользователь1
+Login: user1@mail.ru
+Password: useruser11
+
+Пользователь2
+Login: user2@mail.ru
+Password: useruser22
+
+Пользователь3
+Login: user3@mail.ru
+Password: useruser33
