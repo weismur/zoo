@@ -2,7 +2,7 @@ from django import forms
 
 class AddAn(forms.Form):
     name = forms.CharField(label="Имя",widget=forms.TextInput(attrs={"class":"myfield"}))
-    birthday = forms.DateField(label="Дата рождения",widget=forms.DateInput(attrs={"class":"myfield"}))
+    birthday = forms.CharField(label="Дата рождения",widget=forms.TextInput(attrs={"class":"myfield"}))
     gender = forms.CharField(label="Пол",widget=forms.TextInput(attrs={"class":"myfield"}))
     type = forms.CharField(label="Тип",widget=forms.TextInput(attrs={"class":"myfield"}))
     area_id = forms.IntegerField(label="Зона обитания", widget=forms.NumberInput(attrs={"class": "myfield"}))
@@ -17,9 +17,9 @@ class AddHa(forms.Form):
 
 class AddUser(forms.Form):
     name = forms.CharField(label="ФИО пользователя",widget=forms.TextInput(attrs={"class":"myfield"}))
-    phone = forms.CharField(label="Номер телефона",widget=forms.NumberInput(attrs={"class":"myfield"}))
+    phone = forms.CharField(label="Номер телефона",widget=forms.TextInput(attrs={"class":"myfield"}))
     position = forms.CharField(label="Должность",widget=forms.TextInput(attrs={"class":"myfield"}))
-    birthday = forms.DateField(label="День рождения",widget=forms.DateInput(attrs={"class":"myfield"}))
+    birthday = forms.CharField(label="День рождения",widget=forms.TextInput(attrs={"class":"myfield"}))
     marital_status = forms.CharField(label="семейное положение",widget=forms.TextInput(attrs={"class":"myfield"}))
 
 class AddRa(forms.Form):

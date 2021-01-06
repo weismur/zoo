@@ -10,7 +10,7 @@ admin.autodiscover()
 
 
 urlpatterns = [
-    path('catalog/',views.great, name='great'),
+    path('',views.great, name='great'),
     url(r'^admin/backups/', include('dbbackup_ui.urls')),
     url(r'^admin/', admin.site.urls),
     path('zoo/', views.index, name='home'),

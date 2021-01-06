@@ -124,4 +124,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/zoo/'
-LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/catalog/'
+LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'

@@ -14,16 +14,11 @@ from django.http import HttpResponseNotFound
 
 from firstapp import forms
 
-#Определение главных страниц и просмотра данных
-
-
 def great(request):
     return render(request, "great.html")
 
 def index(request):
     return render(request, "index.html")
-
-
 
 def index_animal(request): #index_author
     form_add = AddAn()
